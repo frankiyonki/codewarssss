@@ -1,0 +1,14 @@
+def cubo(x):
+    espacio = ''
+    for linea in range(1, x * 2 + 1):
+        fila = ''
+        if linea <= x:
+            fila += '/\\' * linea + '_\\' * x
+            separacion = x - linea
+        else:
+            fila += '\\/' * (x * 2 - linea + 1) + '_/' * x
+            separacion= linea - x - 1
+        if 2 * x - linea:
+            fila += '\n'
+        espacio += separacion * ' ' + fila
+    return espacio
