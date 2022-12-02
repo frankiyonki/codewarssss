@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/529adbf7533b761c560004e5/solutions/python
+def fibonacci(n, m={}):
+  if n in m:
+    return m[n]
+  if n >= 2:
+    return m.setdefault(n, fibonacci(n-1, m) + fibonacci(n-2, m))
+  return n
