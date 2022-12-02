@@ -1,3 +1,4 @@
+https://www.codewars.com/kata/537400e773076324ab000262
 def findAnagrams(anagramas):
     resultado = {}
     for letra in anagramas:
