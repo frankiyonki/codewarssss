@@ -1,0 +1,28 @@
+def guerraalfabetica(guerra):
+    suma_total = 0
+    for letra in guerra:
+        if letra == "w":
+            suma_total = suma_total + 4
+        elif letra == "p":
+            suma_total = suma_total + 3
+        elif letra == "b":
+            suma_total = suma_total + 2
+        elif letra == "s":
+            suma_total = suma_total + 1
+        elif letra == "m":
+            suma_total = suma_total - 4
+        elif letra == "q":
+            suma_total = suma_total - 3
+        elif letra == "d":
+            suma_total = suma_total - 2
+        elif letra == "z":
+            suma_total = suma_total - 1
+
+    if suma_total > 0:
+        return print("iskierda gana")
+    elif suma_total == 0:
+        return print("empateeee")
+    else:
+        return print("deresha gana")
+
+guerraalfabetica('wwwwwwz')
